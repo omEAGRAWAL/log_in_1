@@ -22,7 +22,10 @@ const Login = ({ setLoginUser }) => {
     setError(null); // Clear any previous errors
 
     try {
-      const response = await axios.post("http://localhost:9002/login", user);
+      const response = await axios.post(
+        "https://log-in-1-wbg3-4wt44vaua-omeagrawals-projects.vercel.app/login",
+        user
+      );
 
       // Handle successful login response:
       setLoginUser(response.data.user);

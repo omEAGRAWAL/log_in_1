@@ -7,7 +7,13 @@ const mongoose = require("mongoose");
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded());
-app.use(cors({ origin: ["http://localhost:3000"] })); // Restrict CORS in production
+app.use(
+  cors({
+    origin: "https://login.om.kotty.net",
+    methods: ["GET", "POST"],
+    credentials: true,
+  })
+); // Restrict CORS in production
 
 // Replace with environment variables or a secure configuration file
 const dbUrl =

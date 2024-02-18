@@ -25,7 +25,10 @@ const Register = () => {
     const { name, email, password, password2 } = user;
 
     if (name && email && password && password === password2) {
-      const response = await axios.post("http://localhost:9002/register", user);
+      const response = await axios.post(
+        "https://log-in-1-wbg3-4wt44vaua-omeagrawals-projects.vercel.app/register",
+        user
+      );
     } else {
       alert("invalid");
     }
