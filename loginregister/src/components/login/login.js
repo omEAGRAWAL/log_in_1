@@ -23,7 +23,7 @@ const Login = ({ setLoginUser }) => {
 
     try {
       const response = await axios.post(
-        "https://log-in-1-wbg3-4wt44vaua-omeagrawals-projects.vercel.app/login",
+        "https://log-in-1-wbg3.vercel.app/login",
         user
       );
 
