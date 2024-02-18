@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(
   cors({
-    origin: "https://login.om.kotty.net",
+    origin: ["https://login.om.kotty.net"],
     methods: ["GET", "POST"],
     credentials: true,
   })
