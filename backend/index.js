@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(
   cors({
-    origin: ["https://login.om.kotty.net"],
+    origin: ["https://log-in-1-omeagrawals-projects.vercel.app"],
     methods: ["GET", "POST"],
     credentials: true,
   })
