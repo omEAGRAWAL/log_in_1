@@ -26,7 +26,7 @@ const Register = () => {
 
     if (name && email && password && password === password2) {
       const response = await axios.post(
-        "https://log-in-1-wbg3-4wt44vaua-omeagrawals-projects.vercel.app/register",
+        "https://log-in-1-wbg3.vercel.app/register",
         user
       );
     } else {
