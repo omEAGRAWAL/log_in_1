@@ -111,6 +111,6 @@ app.post("/login", async (req, res) => {
     res.status(500).send({ message: "An error occurred" });
   }
 });
-app.listen(port, () => {
+app.listen(3001, () => {
   console.log(`Server listening on port ${port}`);
 });
