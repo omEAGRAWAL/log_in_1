@@ -1,0 +1,30 @@
+.register {
+  text-align: center;
+}
+
+.register h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.register input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.register .button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.register .button:hover {
+  background-color: #0056b3;
+}
+
+.register div {
+  margin-bottom: 10px;
+}
