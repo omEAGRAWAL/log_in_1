@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const bcrypt = require("bcryptjs"); // For password hashing
-const port = 9002;
+const PORT = process.env.PORT;
 const mongoose = require("mongoose");
 
 const app = express();
@@ -111,6 +111,6 @@ app.post("/login", async (req, res) => {
     res.status(500).send({ message: "An error occurred" });
   }
 });
-app.listen(3001, () => {
-  console.log(`Server listening on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
 });
